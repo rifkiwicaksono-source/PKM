@@ -19,6 +19,98 @@
     background: var(--sipz-bg);
 }
 
+/* 3. SIDEBAR GLOBAL */
+.app .sidebar {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    isolation: isolate;
+    flex: 0 0 270px;
+    width: 270px;
+<<<<<<<<< Temporary merge branch 1
+    height: 100vh;
+=========
+    max-height: 100vh;
+    min-height: 0;
+>>>>>>>>> Temporary merge branch 2
+    box-sizing: border-box;
+    padding: 24px 18px 20px;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+<<<<<<<<< Temporary merge branch 1
+=========
+    scrollbar-gutter: stable;
+>>>>>>>>> Temporary merge branch 2
+
+    color: #F5FCFF;
+    background: linear-gradient(
+        180deg,
+        #07536A 0%,
+        #06465B 34%,
+        #03364A 72%,
+        #022D40 100%
+    );
+    border-right: 1px solid rgba(255, 255, 255, .08);
+}
+
+/* Dekorasi gelombang sidebar */
+.app .sidebar::before,
+.app .sidebar::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: -18%;
+    width: 136%;
+    height: 150px;
+    pointer-events: none;
+    opacity: .9;
+}
+
+.app .sidebar::before {
+    top: 38px;
+    background:
+        radial-gradient(
+            ellipse at 72% 100%,
+            transparent 48%,
+            rgba(12, 207, 205, .62) 49%,
+            rgba(12, 207, 205, .16) 54%,
+            transparent 66%
+        ),
+        radial-gradient(
+            ellipse at 28% 100%,
+            transparent 54%,
+            rgba(18, 170, 188, .38) 55%,
+            rgba(18, 170, 188, .10) 61%,
+            transparent 72%
+        );
+}
+
+.app .sidebar::after {
+    bottom: 68px;
+    height: 190px;
+    background:
+        radial-gradient(
+            ellipse at 34% 0%,
+            transparent 48%,
+            rgba(10, 205, 202, .58) 49%,
+            rgba(10, 205, 202, .16) 55%,
+            transparent 68%
+        ),
+        radial-gradient(
+            ellipse at 78% 0%,
+            transparent 54%,
+            rgba(11, 160, 180, .42) 55%,
+            rgba(11, 160, 180, .12) 62%,
+            transparent 74%
+        );
+}
+
+.app .sidebar > * {
+    position: relative;
+    z-index: 1;
+}
+
 /* Brand */
 .app .sidebar .brand {
     gap: 12px;
