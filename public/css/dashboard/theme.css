@@ -19,49 +19,6 @@
     background: var(--sipz-bg);
 }
 
-/* SIDEBAR GLOBAL */
-.app .sidebar {
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-    isolation: isolate;
-
-    flex: 0 0 270px;
-    width: 270px;
-    height: 100vh;
-    min-height: 0;
-    box-sizing: border-box;
-    padding: 24px 18px 20px;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-gutter: stable;
-
-    color: #F5FCFF;
-    background: linear-gradient(
-        180deg,
-        #07536A 0%,
-        #06465B 34%,
-        #03364A 72%,
-        #022D40 100%
-    );
-
-    border-right: 1px solid rgba(255, 255, 255, .08);
-}
-
-/* Tampilan scrollbar */
-.app .sidebar::-webkit-scrollbar {
-    width: 6px;
-}
-
-.app .sidebar::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, .4);
-    border-radius: 10px;
-}
-
-.app .sidebar::-webkit-scrollbar-track {
-    background: transparent;
-}
 /* Brand */
 .app .sidebar .brand {
     gap: 12px;
